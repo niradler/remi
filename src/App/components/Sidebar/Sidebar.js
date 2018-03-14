@@ -1,6 +1,16 @@
 import React, {Component} from 'react';
-import {Sidebar,Header,Title,Anchor,Box,Menu,Footer} from 'grommet';
-
+import {
+    Sidebar,
+    Header,
+    Title,
+    Anchor,
+    Box,
+    Footer,
+    Paragraph,
+    Button
+} from 'grommet';
+import UserIcon from 'grommet/components/icons/base/User';
+import Menu from "../Menu/Menu";
 class SideBar extends Component {
     render() {
         return (
@@ -12,20 +22,12 @@ class SideBar extends Component {
                         </Title>
                     </Header>
                     <Box flex='grow' justify='start'>
-                        <Menu primary={true}>
-                            <Anchor href='#' className='active'>
-                                First
-                            </Anchor>
-                            <Anchor href='#'>
-                                Second
-                            </Anchor>
-                            <Anchor href='#'>
-                                Third
-                            </Anchor>
-                        </Menu>
+                        <Menu inline={false} />
                     </Box>
                     <Footer pad='medium'>
-                        {/* <Button icon={< User />}/> */}
+                        <Paragraph margin='none'>
+                            © 2018 REMI by Nir Adler
+                        </Paragraph>                 
                     </Footer>
                 </Sidebar>
             </div>

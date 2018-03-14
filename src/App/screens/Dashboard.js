@@ -16,7 +16,7 @@ import LinkUp from 'grommet/components/icons/base/LinkUp';
 class Dashboard extends Component {
   render() {
     return (
-      <div className="Dashboard">
+      <div className="Dashboard" style={{    'marginTop': '2%'}}>
 
   
             <Distribution
